@@ -16,7 +16,7 @@ void Sudoku::giveQuestion(){
                         0,9,0,0,0,0,4,0,0};
 	for(int i=0;i<sudokuSize;i++){
 		if((i+1)%9==0){
-			cout<<endl;
+			cout<<ans_map[i]<<endl;
 		}
 		else cout<<ans_map[i]<<" ";
 	}
@@ -284,9 +284,11 @@ void Sudoku::change(){
 }
 
 void Sudoku::printout(int arr[]){
+	int i;
 		for(int i=0;i<sudokuSize;i++){
 			if((i+1)%9==0){
-				cout<<endl;
+				
+				cout<<arr[i]<<endl;
 		}
 		else cout<<arr[i]<<" ";
 	}
