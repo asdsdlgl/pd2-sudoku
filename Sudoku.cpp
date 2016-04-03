@@ -193,7 +193,8 @@ void Sudoku::solve(){
 
 					for(int i=0;i<sudokuSize;i++){
 						if((i+1)%9==0){
-						cout<<endl;
+
+						cout<<player_map[i]<<endl;
 						}
 						else cout<<player_map[i]<<" ";
 					}
